@@ -1,0 +1,46 @@
+{
+  "name": "prueba_oky",
+  "version": "1.0.0",
+  "description": "OKY Wallet - Transaction Explorer",
+  "private": true,
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gerson7w7/PRUEBA_OKY.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gerson7w7/PRUEBA_OKY/issues"
+  },
+  "homepage": "https://github.com/Gerson7w7/PRUEBA_OKY#readme",
+  "dependencies": {
+    "@apollo/client": "^3.11.10",
+    "gatsby": "^5.16.1",
+    "graphql": "^16.13.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^24.8.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "autoprefixer": "^10.5.0",
+    "jsdom": "^27.0.1",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
