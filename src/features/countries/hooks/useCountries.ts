@@ -16,6 +16,7 @@ export const useContries = () => {
     },
   );
 
+  // Req 2: filtro en cliente por limitaciones de busqueda libre en el schema publico.
   const filteredCountries = useMemo(() => {
     if (!data?.countries) {
       return [];
