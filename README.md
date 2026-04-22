@@ -37,6 +37,7 @@ La demo está desplegada en Netlify y puedes acceder directamente aquí:
 - Justificacion del enfoque (Req 2): se eligio filtrado cliente porque la API publica de Countries no expone una busqueda libre unificada (por ejemplo, regex/contains sobre nombre, codigo y continente en un solo argumento). Con este enfoque la experiencia es inmediata, se evita sobrecargar la red con requests por tecla y se mantiene un comportamiento consistente durante la prueba.
 - Se eligio paginacion numerica en cliente sobre toda la lista ya descargada (simple y clara para la prueba).
 - No se implemento autenticacion, persistencia ni analitica, porque no eran requisitos del alcance.
+- No se estilizó demasiado la UI, ya que esto requiere de un diseño más pensado y explícito, se utilizaron clases comunes y simples. 
 
 ## Lo que mas me costo
 
