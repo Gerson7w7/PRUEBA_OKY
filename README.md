@@ -3,8 +3,11 @@
 Mini aplicacion construida con Gatsby + React + TypeScript + Apollo Client que consume una API GraphQL publica para simular historial de movimientos.
 
 ## Demo en vivo
+Se decidió usar Netlify para el despliege de la aplicación, ya que tiene una capa gratuita y fácil de usar. 
 
-Pendiente de despliegue.
+La demo está desplegada en Netlify y puedes acceder directamente aquí:
+
+[Demo en vivo](https://oky-prueba-gq.netlify.app/)
 
 ## Como correr el proyecto
 
