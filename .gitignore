@@ -1,0 +1,8 @@
+node_modules/
+.cache/
+public/
+.venv/
+.DS_Store
+enunciado.txt
+enunciado_ocr.txt
+tmp_pdf_pages/
