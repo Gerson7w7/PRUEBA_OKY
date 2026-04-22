@@ -12,11 +12,11 @@ export function Layout({ children }: LayoutProps) {
     <div className="app-shell">
       <header className="topbar">
         <div>
-          <p className="eyebrow">OKY Wallet</p>
+          <p className="eyebrow">OKY Wallet Simulator</p>
           <h1>Transaction Explorer</h1>
         </div>
         <Link to="/" className="home-link">
-          Inicio
+          Volver a la lista
         </Link>
       </header>
       <main>{children}</main>
