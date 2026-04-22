@@ -34,7 +34,7 @@
 
 @layer components {
   .app-shell {
-    @apply max-w-4xl mx-auto px-4 py-7 sm:px-4 md:px-8 md:py-10;
+    @apply max-w-4xl mx-auto px-4 py-7 sm:px-4 md:py-10;
   }
 
   .topbar {
@@ -50,11 +50,11 @@
   }
 
   .card {
-    @apply bg-white/88 backdrop-blur-lg border border-gray-200 rounded-2xl p-5 shadow-lg;
+    @apply flex flex-col bg-white/88 backdrop-blur-lg border border-gray-200 rounded-2xl p-5 shadow-lg w-full;
   }
 
   .toolbar {
-    @apply flex flex-col sm:flex-row sm:justify-between sm:gap-5 sm:items-end mb-4;
+    @apply flex flex-col sm:flex-row sm:justify-between sm:gap-5 sm:items-start mb-4;
   }
 
   .toolbar h2 {
@@ -66,11 +66,15 @@
   }
 
   .search-field {
-    @apply grid gap-1.5 w-full sm:min-w-96;
+    @apply grid gap-1.5 w-full sm:max-w-96;
   }
 
   .search-field span {
-    @apply font-mono text-xs;
+    @apply text-sm;
+  }
+
+  .search-field input {
+    @apply border border-gray-300 rounded-xl px-3 py-2.5 text-base h-10;
   }
 
   .table-wrap {
@@ -88,7 +92,7 @@
   .country-link:focus-visible,
   button:focus-visible,
   input:focus-visible {
-    @apply outline outline-2 outline-offset-2 outline-green-600;
+    @apply outline-2 outline-offset-2 outline-green-600;
   }
 
   .results-count {
@@ -96,7 +100,7 @@
   }
 
   .pagination {
-    @apply flex flex-wrap gap-2 mt-4;
+    @apply flex flex-wrap gap-2 mt-4 justify-center;
   }
 
   .ghost-btn,
@@ -130,11 +134,11 @@
   }
 
   .detail-card article h2 {
-    @apply mt-2 text-2xl font-bold;
+    @apply flex gap-4 text-2xl font-bold;
   }
 
   .detail-grid {
-    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3;
+    @apply grid my-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3;
   }
 
   .detail-grid div {
@@ -150,7 +154,7 @@
   }
 
   .language-list {
-    @apply flex flex-wrap gap-2 list-none m-0 p-0;
+    @apply flex flex-wrap gap-2 list-none m-1;
   }
 
   .language-list li {
@@ -162,7 +166,7 @@
   }
 
   .home-link {
-    @apply border border-gray-300 rounded-full px-3 py-2 font-mono text-sm hover:bg-gray-50 transition-colors;
+    @apply  rounded-lg px-3 py-2 text-sm bg-blue-400 hover:bg-blue-600 shadow-lg text-white/90 transition-colors;
   }
 }
 

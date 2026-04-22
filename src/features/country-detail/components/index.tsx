@@ -1,35 +1,20 @@
 import React from "react";
-import { useQuery } from "@apollo/client";
 import { Link, type HeadFC, type PageProps } from "gatsby";
 
-import { Layout } from "../../components/Layout";
-import { EmptyState, ErrorState, LoadingState } from "../../components/States";
-import { COUNTRY_DETAIL_QUERY } from "../../graphql/queries";
-import type { CountryDetailQueryData, CountryDetailVars } from "../../types/country";
+import { Layout } from "../../../components/Layout";
+import { EmptyState, ErrorState, LoadingState } from "../../../components/States";
+import { useCountryDetail } from "../hooks/useCountryDetail";
 
 type DetailPageContext = {
   code: string;
 };
 
-export default function CountryDetailPage(props: PageProps<unknown, DetailPageContext>) {
+export default function CountryDetail(props: PageProps<unknown, DetailPageContext>) {
   const { code } = props.pageContext;
-
-  const { data, loading, error, refetch } = useQuery<CountryDetailQueryData, CountryDetailVars>(
-    COUNTRY_DETAIL_QUERY,
-    {
-      variables: { code },
-      fetchPolicy: "cache-first",
-    }
-  );
-
-  const country = data?.country;
-
+  const { loading, error, refetch, country } = useCountryDetail(code);
   return (
     <Layout>
       <section className="card detail-card">
-        <Link to="/" className="ghost-btn back-link">
-          Volver a la lista
-        </Link>
 
         {loading && !country ? <LoadingState /> : null}
 

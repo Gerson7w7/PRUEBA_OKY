@@ -34,7 +34,7 @@ export const createPages: GatsbyNode["createPages"] = async ({ actions, reporter
   payload.data.countries.forEach((country) => {
     createPage({
       path: `/country/${country.code}`,
-      component: path.resolve("./src/features/country/CountryDetailFeature.tsx"),
+      component: path.resolve("./src/features/country-detail/components/index.tsx"),
       context: { code: country.code },
     });
   });
